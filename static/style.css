@@ -1,0 +1,12 @@
+.youtube-container{
+    display: flex;
+    justify-content: space-around;
+    gap: .5rem;
+    flex-wrap: wrap;
+    background-color: #111827;
+}
+.youtube-container div iframe{
+    width: auto;
+    height: auto;
+    margin: 1rem 0;
+}
