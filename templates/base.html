@@ -32,24 +32,25 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
-                                    href="#">Home</a>
+                                    href="{% url 'home' %}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="{% url 'about' %}">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#"
                                     role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Dropdown
+                                    Material
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another
-                                            action</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                    <li><a class="dropdown-item" href="#">Notes</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something
-                                            else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Previous Year</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -60,50 +61,8 @@
                                 type="submit">Search</button>
                         </form>
                     </div>
-                </div> </nav>
-            <div class="banner">
-                <div id="carouselExample" class="carousel slide my-0">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                src="https://source.unsplash.com/1600x400/?aircraft,airforce"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="https://source.unsplash.com/1600x400/?army,parasuit"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="https://source.unsplash.com/1600x400/?soldier,helicopter"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="https://source.unsplash.com/1600x400/?map,globe"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="https://source.unsplash.com/1600x400/?rifle,sniper"
-                                class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"
-                            aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"
-                            aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+                </div> 
+            </nav>           
         </header>
         {% block content %}
 
